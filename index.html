@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Benim İlk Web Sitem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Kodla<span>Finn</span></h1>
+      <nav class="nav">
+        <a href="#about">Hakkında</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+        <button id="themeToggle" aria-label="Tema değiştir">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <div>
+        <h2>Merhaba, ben Finn</h2>
+        <p>Kodlamaya yeni başladın — doğru yerdesin. Basit projeler, alıştırmalar ve eğlenceli görevlerle ilerleyeceğiz.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">Projelerime Gözat</a>
+          <a class="btn ghost" href="#contact">İletişime Geç</a>
+        </div>
+      </div>
+      <div class="hero-code">
+        <pre><code>print("Merhaba Dünya!")</code></pre>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>Hakkımda</h3>
+      <p>Bu site öğrenme amaçlı, Python &amp; Web temelli mini projeler ve örnekler içerir. İstersen ben sana adım adım küçük görevler oluştururum.</p>
+      <ul class="features">
+        <li>🧭 Basit ve anlaşılır</li>
+        <li>⚡ Hızlı yüklenir — sadece HTML/CSS/JS</li>
+        <li>🛠️ Kendi içeriğini kolayca değiştirebilirsin</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projeler (Örnekler)</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Mini Hesap Makinesi</h4>
+          <p>Kullanıcıdan iki sayı alıp toplayan Python örneği. (Ders 4)</p>
+          <pre><code>print(int(input()) + int(input()))</code></pre>
+        </article>
+
+        <article class="card">
+          <h4>Basit Web Sayfası</h4>
+          <p>Bu sayfa gibi bir HTML/CSS/JS projesi — ilk adımda harika.</p>
+        </article>
+
+        <article class="card">
+          <h4>Discord Bot (Örnek)</h4>
+          <p>İleride istersen bot yapmayı da öğretebilirim — basit komutlarla başlarız.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>İletişim</h3>
+      <p>Herhangi bir soru, projenin devamı veya kişiselleştirme istersen yaz — örnek e-posta kopyala butonu var:</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <p><strong>Email:</strong> <span id="emailText">finn@example.com</span></p>
+          <button id="copyEmail">E-postayı Kopyala</button>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            Adın
+            <input type="text" id="inputName" required />
+          </label>
+
+          <label>
+            E-postan
+            <input type="email" id="inputEmail" required />
+          </label>
+
+          <label>
+            Mesajın
+            <textarea id="inputMessage" rows="4" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Gönder</button>
+            <button type="reset" class="btn ghost">Temizle</button>
+          </div>
+
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 KodlaFinn — Öğrenme amaçlı örnek site</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
